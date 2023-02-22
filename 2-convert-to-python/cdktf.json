@@ -3,7 +3,7 @@
   "app": "pipenv run python main.py",
   "projectId": "b0ca5c46-d5b6-488c-bd84-2ffcf2be694d",
   "sendCrashReports": "true",
-  "terraformProviders": [],
+  "terraformProviders": ["hashicorp/kubernetes"],
   "terraformModules": [],
   "codeMakerOutput": "imports",
   "context": {

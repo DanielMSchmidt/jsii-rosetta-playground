@@ -4,78 +4,69 @@ import ...gen.providers.kubernetes as kubernetes
 # The following providers are missing schema information and might need manual adjustments to synthesize correctly: kubernetes.
 # For a more precise conversion please use the --provider flag in convert.
 kubernetes.deployment.Deployment(self, "example",
-    metadata=[{
-        "labels": [{
-            "test": "MyExampleApp"
-        }
-        ],
-        "name": "terraform-example"
-    }
-    ],
-    spec=[{
-        "replicas": 3,
-        "selector": [{
-            "match_labels": [{
-                "test": "MyExampleApp"
-            }
-            ]
-        }
-        ],
-        "template": [{
-            "metadata": [{
-                "labels": [{
-                    "test": "MyExampleApp"
-                }
-                ]
-            }
-            ],
-            "spec": [{
-                "container": [{
-                    "image": "nginx:1.21.6",
-                    "liveness_probe": [{
-                        "http_get": [{
-                            "http_header": [{
-                                "name": "X-Custom-Header",
-                                "value": "Awesome"
-                            }
-                            ],
-                            "path": "/",
-                            "port": 80
-                        }
-                        ],
-                        "initial_delay_seconds": 3,
-                        "period_seconds": 3
-                    }
-                    ],
-                    "name": "example",
-                    "resources": [{
-                        "limits": [{
-                            "cpu": "0.5",
-                            "memory": "512Mi"
-                        }
-                        ],
-                        "requests": [{
-                            "cpu": "250m",
-                            "memory": "50Mi"
-                        }
-                        ]
-                    }
-                    ]
-                }
-                ]
-            }
-            ]
-        }
-        ]
-    }
-    ]
-)
-[91m[2023-02-20T13:55:31.877] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
-  set_closure_cell(cell, cls)
-
-[91m[2023-02-20T13:55:31.880] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
-  set_closure_cell(cell, cls)
-
-[91m[2023-02-20T13:55:31.880] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
-  set_closure_cell(cell, cls)
-
+                                 metadata=[{
+                                     "labels": [{
+                                         "test": "MyExampleApp"
+                                     }
+                                     ],
+                                     "name": "terraform-example"
+                                 }
+                                 ],
+                                 spec=[{
+                                     "replicas": 3,
+                                     "selector": [{
+                                         "match_labels": [{
+                                             "test": "MyExampleApp"
+                                         }
+                                         ]
+                                     }
+                                     ],
+                                     "template": [{
+                                         "metadata": [{
+                                             "labels": [{
+                                                 "test": "MyExampleApp"
+                                             }
+                                             ]
+                                         }
+                                         ],
+                                         "spec": [{
+                                             "container": [{
+                                                 "image": "nginx:1.21.6",
+                                                 "liveness_probe": [{
+                                                     "http_get": [{
+                                                         "http_header": [{
+                                                             "name": "X-Custom-Header",
+                                                             "value": "Awesome"
+                                                         }
+                                                         ],
+                                                         "path": "/",
+                                                         "port": 80
+                                                     }
+                                                     ],
+                                                     "initial_delay_seconds": 3,
+                                                     "period_seconds": 3
+                                                 }
+                                                 ],
+                                                 "name": "example",
+                                                 "resources": [{
+                                                     "limits": [{
+                                                         "cpu": "0.5",
+                                                         "memory": "512Mi"
+                                                     }
+                                                     ],
+                                                     "requests": [{
+                                                         "cpu": "250m",
+                                                         "memory": "50Mi"
+                                                     }
+                                                     ]
+                                                 }
+                                                 ]
+                                             }
+                                             ]
+                                         }
+                                         ]
+                                     }
+                                     ]
+                                 }
+                                 ]
+                                 )

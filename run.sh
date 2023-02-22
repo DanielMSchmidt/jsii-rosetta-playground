@@ -16,13 +16,13 @@ cat $ROOT_DIR/input.tf | $CDKTF_BINARY convert --language typescript > converted
 echo "#2: Convert to Python"
 cd $ROOT_DIR/2-convert-to-python
 pipenv install
+$CDKTF_BINARY get
 cat $ROOT_DIR/input.tf | $CDKTF_BINARY convert > converted.py
 
 echo "#3: Use Rosetta directly to convert to Python"
 cd $ROOT_DIR/3-rosetta-to-python
 pipenv install
+export OUTPUT_JSII=$ROOT_DIR/3-rosetta-to-python/jsii
 $CDKTF_BINARY get
 
 $ROSETTA_BINARY snippet ../1-convert-to-typescript/converted.ts --python > converted.py
-
-
