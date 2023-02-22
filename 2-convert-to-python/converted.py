@@ -70,12 +70,12 @@ kubernetes.deployment.Deployment(self, "example",
     }
     ]
 )
-[91m[2023-02-20T13:46:47.167] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
+[91m[2023-02-20T13:55:31.877] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
   set_closure_cell(cell, cls)
 
-[91m[2023-02-20T13:46:47.169] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
+[91m[2023-02-20T13:55:31.880] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
   set_closure_cell(cell, cls)
 
-[91m[2023-02-20T13:46:47.169] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
+[91m[2023-02-20T13:55:31.880] [ERROR] default - [39m/usr/local/Cellar/pipenv/2022.9.24/libexec/lib/python3.11/site-packages/pipenv/vendor/attr/_make.py:876: RuntimeWarning: Running interpreter doesn't sufficiently support code object introspection.  Some features like bare super() or accessing __class__ will not work with slotted classes.
   set_closure_cell(cell, cls)
 
