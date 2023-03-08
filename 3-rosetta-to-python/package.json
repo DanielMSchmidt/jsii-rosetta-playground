@@ -1,0 +1,10 @@
+{
+  "name": "3-rosetta-to-python",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.14.6",
+    "jsii-rosetta": "^1.77.0"
+  }
+}

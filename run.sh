@@ -25,4 +25,4 @@ pipenv install
 export OUTPUT_JSII=$ROOT_DIR/3-rosetta-to-python/jsii
 $CDKTF_BINARY get
 
-$ROSETTA_BINARY snippet ../1-convert-to-typescript/converted.ts --python > converted.py
+npx ts-node $ROOT_DIR/3-rosetta-to-python/run-rosetta

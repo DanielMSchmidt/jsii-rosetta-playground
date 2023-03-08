@@ -1,1 +1,3 @@
 3-rosetta-to-python/.gen
+node_modules
+yarn-error.log
